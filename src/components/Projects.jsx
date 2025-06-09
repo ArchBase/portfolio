@@ -9,6 +9,49 @@ function Projects() {
         I've done a lot of projects in the fields of game industry, machine learning, AI, Reinforcement learning, etc.
       </p>
 
+      {/* "My Websites" Section */}
+      <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 sm:mb-6 text-green-700">My Websites 🌐</h3>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-12">
+        {/* ExamPRO Website */}
+        <div className="bg-gray-50 p-4 sm:p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col items-center">
+          <h4 className="text-lg sm:text-xl font-semibold mb-3 text-gray-800">ExamPRO</h4>
+          <img
+            src="/web1.png" // Path to the image in the public folder
+            alt="ExamPRO Website Preview"
+            className="w-full h-auto rounded-lg mb-4 object-cover"
+            style={{ maxHeight: '200px' }} // Optional: limit image height
+          />
+          <a
+            href="https://github.com/ArchBase/ExamPRO"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-blue-500 text-white font-bold py-2 px-4 rounded-full shadow-lg hover:bg-blue-600 transition duration-300 ease-in-out text-base sm:text-lg"
+          >
+            GitHub Repository
+          </a>
+        </div>
+
+        {/* AI Startup Website */}
+        <div className="bg-gray-50 p-4 sm:p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col items-center">
+          <h4 className="text-lg sm:text-xl font-semibold mb-3 text-gray-800">AI Startup Website</h4>
+          <img
+            src="/web2.png" // Path to the image in the public folder
+            alt="AI Startup Website Preview"
+            className="w-full h-auto rounded-lg mb-4 object-cover"
+            style={{ maxHeight: '200px' }} // Optional: limit image height
+          />
+          <a
+            href="https://github.com/BitWattr/Home"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-blue-500 text-white font-bold py-2 px-4 rounded-full shadow-lg hover:bg-blue-600 transition duration-300 ease-in-out text-base sm:text-lg"
+          >
+            GitHub Repository
+          </a>
+        </div>
+      </div>
+      {/* End of "My Websites" Section */}
+
       {/* Adjusted font sizes for subheadings */}
       <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 sm:mb-6 text-blue-700">My Games 🎮</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-12">
