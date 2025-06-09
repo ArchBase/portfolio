@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef, useMemo } from 'react'; // Import useMemo
 import Navbar from './components/Navbar';
 import Launch from './components/Launch';
 import Projects from './components/Projects';
@@ -15,13 +15,14 @@ function App() {
   const contactRef = useRef(null);
   const aboutMeRef = useRef(null);
 
-  // Array of sections with their IDs and corresponding refs
-  const sections = [
+  // Use useMemo to ensure the sections array is only created once
+  // or when its dependencies change (in this case, no dependencies, so effectively once).
+  const sections = useMemo(() => [
     { id: 'Launch', ref: launchRef },
     { id: 'projects', ref: projectsRef },
     { id: 'contact', ref: contactRef },
     { id: 'about_me', ref: aboutMeRef },
-  ];
+  ], [launchRef, projectsRef, contactRef, aboutMeRef]); // Dependencies for useMemo
 
   // Effect to handle smooth scrolling when a navigation link is clicked
   useEffect(() => {
