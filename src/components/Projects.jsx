@@ -1,5 +1,5 @@
 import React from 'react';
-import { Globe, Gamepad2, Brain, Code } from 'lucide-react'; // Import icons
+import { Globe, Gamepad2, Brain } from 'lucide-react'; // Removed 'Code' import
 
 function Projects() {
   return (
