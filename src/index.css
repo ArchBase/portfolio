@@ -27,3 +27,49 @@ body {
 .animation-delay-300 {
   animation-delay: 0.3s;
 }
+
+/* Keyframes for button hover gradient effect */
+@keyframes gradient-hover-purple-blue {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes gradient-hover-pink-orange {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes gradient-hover-green-blue {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Apply animations to button span on group hover */
+.group:hover .group-hover\:bg-opacity-0 {
+  animation: none; /* Reset individual span animation if needed, or let parent handle */
+}
+
+/* Example of how to apply animations to specific button types based on their gradients */
+/* These classes are applied directly in the JSX, this CSS just defines the animation */
+.group.bg-gradient-to-br.from-purple-600.to-blue-500:hover .relative {
+  background-position: 100% 50%;
+  transition: background-position 0.6s ease-in-out;
+}
+
+.group.bg-gradient-to-br.from-pink-500.to-orange-400:hover .relative {
+  background-position: 100% 50%;
+  transition: background-position 0.6s ease-in-out;
+}
+
+.group.bg-gradient-to-br.from-green-400.to-blue-600:hover .relative {
+  background-position: 100% 50%;
+  transition: background-position 0.6s ease-in-out;
+}
+
+/* You might want to define more subtle effects for the inner span */
+.group:hover .relative {
+  color: white; /* Text color change on hover */
+}

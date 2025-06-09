@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef, useMemo } from 'react';
-// Corrected import paths to include .jsx extension
+// Corrected import paths to include .jsx extension and 'components/' subdirectory
 import Navbar from './components/Navbar.jsx';
 import Launch from './components/Launch.jsx';
 import Projects from './components/Projects.jsx';
@@ -100,11 +100,11 @@ function App() {
       <Navbar activeSection={activeSection} />
 
       {/* Main content sections, each linked to its ref */}
-      {/* Adjusted section heights and padding for better responsiveness */}
+      {/* Adjusted section heights and padding for better responsiveness and vibrant gradients */}
       <section
         id="Launch"
         ref={launchRef}
-        className="pt-20 px-5 min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-400 to-indigo-500 text-white rounded-lg shadow-lg m-4 py-10"
+        className="pt-20 px-5 min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-500 to-indigo-600 text-white rounded-lg shadow-lg m-4 py-10"
       >
         <Launch />
       </section>
@@ -112,7 +112,7 @@ function App() {
       <section
         id="projects"
         ref={projectsRef}
-        className="pt-20 px-5 min-h-screen bg-gray-100 text-gray-800 rounded-lg shadow-lg m-4 py-10"
+        className="pt-20 px-5 min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-200 text-gray-800 rounded-lg shadow-lg m-4 py-10"
       >
         <Projects />
       </section>
@@ -120,7 +120,7 @@ function App() {
       <section
         id="contact"
         ref={contactRef}
-        className="pt-20 px-5 min-h-screen flex items-center justify-center bg-gradient-to-br from-green-400 to-teal-500 text-white rounded-lg shadow-lg m-4 py-10"
+        className="pt-20 px-5 min-h-screen flex items-center justify-center bg-gradient-to-br from-green-500 to-teal-600 text-white rounded-lg shadow-lg m-4 py-10"
       >
         <Contact />
       </section>
@@ -128,7 +128,7 @@ function App() {
       <section
         id="about_me"
         ref={aboutMeRef}
-        className="pt-20 px-5 min-h-screen flex items-center justify-center bg-orange-100 text-gray-800 rounded-lg shadow-lg m-4 py-10"
+        className="pt-20 px-5 min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-100 to-yellow-200 text-gray-800 rounded-lg shadow-lg m-4 py-10"
       >
         <AboutMe />
       </section>
