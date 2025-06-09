@@ -2,15 +2,17 @@ import React from 'react';
 
 function Projects() {
   return (
-    <div className="container mx-auto p-8 bg-white rounded-lg shadow-xl mt-8">
-      <h2 className="text-4xl font-bold mb-8 text-center text-gray-800">Project Gallery 🚀</h2>
-      <p className="text-lg mb-10 text-center text-gray-600">
+    <div className="container mx-auto p-4 sm:p-8 bg-white rounded-lg shadow-xl mt-8 max-w-4xl">
+      {/* Adjusted font sizes for better responsiveness */}
+      <h2 className="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8 text-center text-gray-800">Project Gallery 🚀</h2>
+      <p className="text-base sm:text-lg mb-8 sm:mb-10 text-center text-gray-600">
         I've done a lot of projects in the fields of game industry, machine learning, AI, Reinforcement learning, etc.
       </p>
 
-      <h3 className="text-3xl font-semibold mb-6 text-blue-700">My Games 🎮</h3>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-        <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+      {/* Adjusted font sizes for subheadings */}
+      <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 sm:mb-6 text-blue-700">My Games 🎮</h3>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-12">
+        <div className="bg-gray-50 p-4 sm:p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
           <iframe
             title="Assault Auto demo"
             frameBorder="0"
@@ -22,7 +24,7 @@ function Projects() {
             <a href="https://project-unplayed.itch.io/assault-auto-demo">Assault Auto demo by Project_Unplayed</a>
           </iframe>
         </div>
-        <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+        <div className="bg-gray-50 p-4 sm:p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
           <iframe
             title="Exchange Ventures: Profit Pursuit"
             frameBorder="0"
@@ -36,9 +38,9 @@ function Projects() {
         </div>
       </div>
 
-      <h3 className="text-3xl font-semibold mb-6 text-purple-700">Reinforcement Learning 🧠</h3>
-      <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
-        <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+      <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 sm:mb-6 text-purple-700">Reinforcement Learning 🧠</h3>
+      <div className="grid grid-cols-1 md:grid-cols-1 gap-6 sm:gap-8">
+        <div className="bg-gray-50 p-4 sm:p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
           <iframe
             title="Car Reinforcement Learning (live demo)"
             frameBorder="0"
