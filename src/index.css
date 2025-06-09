@@ -1,37 +1,13 @@
-/* You can add any global CSS here, or simply include Tailwind directives. */
-/* For example, if you set up Tailwind CLI, you'd import your generated CSS here. */
-/* For this example using CDN, this file might remain largely empty or contain custom fonts */
-
-/* Custom animations from your previous setup, if you prefer global CSS for them */
-@keyframes fade-in-down {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes fade-in-up {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.animate-fade-in-down {
-  animation: fade-in-down 1s ease-out forwards;
-}
-.animate-fade-in-up {
-  animation: fade-in-up 1s ease-out forwards;
-}
-
 body {
-  font-family: 'Inter', sans-serif; /* Apply Inter font globally */
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Any other base styles that are not handled by Tailwind */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
